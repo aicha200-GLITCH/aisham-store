@@ -1,0 +1,689 @@
+* {
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fffaf7;
+    color: #302426;
+}
+
+
+
+
+.navbar {
+    height: 85px;
+    background: #fffdfb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    border-bottom: 1px solid #ead8d4;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    font-size: 40px;
+    color: #a85c68;
+}
+
+.logo h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: #743d48;
+}
+
+.logo small {
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #8d686d;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #33282a;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #a85c68;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search {
+    border: 1px solid #e2c8c8;
+    border-radius: 25px;
+    padding: 8px 15px;
+    color: #9b6b72;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 150px;
+    margin-left: 5px;
+}
+
+.icon {
+    font-size: 21px;
+    color: #8e4d59;
+}
+
+
+
+.hero {
+    height: 310px;
+    background:
+        linear-gradient(
+            rgba(245, 220, 216, 0.72),
+            rgba(245, 220, 216, 0.72)
+        ),
+        url("images/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: #39282a;
+}
+
+.crown {
+    font-size: 35px;
+    color: #874b55;
+}
+
+.hero h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 58px;
+    letter-spacing: 8px;
+}
+
+.hero h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.hero p:last-child {
+    color: #925b62;
+    font-style: italic;
+}
+
+.line {
+    width: 90px;
+    height: 1px;
+    background: #9d6069;
+    margin: 5px auto;
+}
+
+
+/* =========================
+   ROMANS
+========================= */
+
+.romans {
+    padding: 60px 6%;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.section-title span {
+    width: 55px;
+    height: 1px;
+    background: #b87880;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #806b6d;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   BOOK GRID
+========================= */
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px 35px;
+}
+
+.book-card {
+    background: transparent;
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-7px);
+}
+
+.book-card img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 8px 20px rgba(80, 40, 40, 0.12);
+}
+
+.book-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    margin-top: 13px;
+}
+
+.author {
+    color: #a16a70;
+    font-size: 13px;
+    margin: 4px 0 10px;
+}
+
+.book-card strong {
+    font-size: 17px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+button {
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    border-radius: 22px;
+    padding: 9px 14px;
+    font-size: 11px;
+}
+
+.order {
+    border: none;
+    background: #b76570;
+    color: white;
+}
+
+.order:hover {
+    background: #914a56;
+}
+
+.details {
+    background: white;
+    border: 1px solid #c88991;
+    color: #814851;
+}
+
+.details:hover {
+    background: #f7e4e3;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #f5dfdc;
+    padding: 45px 7%;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.3fr 1.3fr;
+    gap: 40px;
+}
+
+footer h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #7c4650;
+}
+
+footer h3 {
+    font-family: "Playfair Display", serif;
+    margin-bottom: 15px;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: #594447;
+    font-size: 13px;
+    margin: 6px 0;
+}
+
+footer p {
+    font-size: 13px;
+    color: #654f52;
+    margin: 8px 0;
+}
+
+.social {
+    color: #8d4e59;
+}
+
+.copyright {
+    text-align: center;
+    background: #f1d8d5;
+    padding: 12px;
+    font-size: 11px;
+    color: #76595c;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        display: none;
+    }
+
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .logo h1 {
+        font-size: 23px;
+    }
+
+    .hero {
+        height: 260px;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .romans {
+        padding: 40px 20px;
+    }
+
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 15px;
+    }
+
+    .book-card img {
+        height: 230px;
+    }
+
+    .book-card h3 {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+
+/* TABLETTE */
+@media (max-width: 900px) {
+
+    .cadres-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+}
+
+
+/* TELEPHONE */
+@media (max-width: 600px) 
+
+    .cadres {
+        width: 92%;
+    }
+
+    .cadres-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+
+    .cadre-card img {
+        height: 230px !important;
+    }
+
+    .cadre-card .buttons {
+        flex-direction: column;
+    }
+    /* =========================
+   CATEGORIES
+========================= */
+
+.categories {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin: 35px 0 45px;
+
+}
+
+
+.category-btn {
+
+    background: #fffdfb;
+
+    border: 1px solid #d9a5aa;
+
+    color: #814851;
+
+    padding: 12px 25px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+
+}
+
+
+.category-btn:hover {
+
+    background: #f5dfdc;
+
+    transform: translateY(-3px);
+
+}
+
+
+.category-btn.active {
+
+    background: #b76570;
+
+    color: white;
+
+    border-color: #b76570;
+
+}
+
+
+/* Animation des romans */
+
+.book-card {
+
+    transition: 0.3s ease;
+
+}
+
+
+.book-card:hover {
+
+    transform: translateY(-7px);
+
+}
+```css
+/* =========================
+   ICONE PANIER
+========================= */
+
+.cart-button {
+    position: relative;
+    border: none;
+    background: transparent;
+    color: #8e4d59;
+    font-size: 23px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+#cartCount {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background: #b76570;
+    color: white;
+    font-size: 10px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 4px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   FENETRE DU PANIER
+========================= */
+
+.cart-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(48, 36, 38, 0.55);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.cart-box {
+    width: 100%;
+    max-width: 520px;
+    max-height: 85vh;
+    overflow-y: auto;
+    background: #fffaf7;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(48, 36, 38, 0.2);
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ead8d4;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.cart-header h2 {
+    font-family: "Playfair Display", serif;
+    color: #743d48;
+    font-size: 26px;
+}
+
+.close-cart {
+    border: none;
+    background: transparent;
+    color: #743d48;
+    font-size: 22px;
+    padding: 5px;
+}
+
+/* =========================
+   ARTICLES DU PANIER
+========================= */
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ead8d4;
+}
+
+.cart-item h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    color: #743d48;
+}
+
+.cart-item p {
+    font-size: 13px;
+    color: #806b6d;
+    margin-top: 5px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid #d9a5aa;
+    background: white;
+    color: #814851;
+    font-size: 16px;
+}
+
+.quantity-controls span {
+    min-width: 18px;
+    text-align: center;
+}
+
+.remove-item {
+    border: none;
+    background: #f5dfdc;
+    color: #814851;
+    padding: 8px 12px;
+}
+
+/* =========================
+   TOTAL ET COMMANDE
+========================= */
+
+.empty-cart {
+    text-align: center;
+    color: #806b6d;
+    padding: 30px 0;
+}
+
+.cart-footer {
+    padding-top: 20px;
+}
+
+.total-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.total-line strong {
+    color: #743d48;
+    font-size: 21px;
+}
+
+.clear-cart,
+.checkout-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.clear-cart {
+    background: white;
+    border: 1px solid #c88991;
+    color: #814851;
+}
+
+.checkout-btn {
+    background: #b76570;
+    color: white;
+    border: none;
+}
+
+.checkout-btn:hover {
+    background: #914a56;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .cart-box {
+        padding: 18px;
+    }
+
+    .cart-header h2 {
+        font-size: 22px;
+    }
+
+    .cart-item h3 {
+        font-size: 14px;
+    }
+
+}
+
+}

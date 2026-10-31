@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AISHAM - Romans & Histoires</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="mainPage"></div>
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>♧</span>
+            <div>
+                <h1>AISHAM</h1>
+                <small>Books · Dreams · You</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#" class="active">Accueil</a>
+            <a href="#romans">Romans</a>
+            <a href="#nouveautes">Nouveautés</a>
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+            <div class="search">
+                🔍
+                <input type="text" placeholder="Rechercher un roman...">
+            </div>
+
+            
+<span class="icon" id="favoriteIcon" title="Mes favoris">♡</span>
+
+<button class="cart-button" id="cartIcon" type="button">
+    🛒
+    <span id="cartCount">0</span>
+</button>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="crown">♕</p>
+
+            <h2>AISHAM</h2>
+
+            <div class="line"></div>
+
+            <h3>Romans & Histoires </h3>
+
+            <p>Des livres pour toutes les âmes rêveuses ♡</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ROMANS -->
+    <section class="romans" id="romans">
+     
+        <div class="section-title">
+            <span></span>
+            <h2>Nos Romans</h2>
+            <span></span>
+        </div>
+
+        <p class="subtitle">
+            Découvrez nos meilleures lectures
+        </p>
+   <!-- CATEGORIES -->
+
+<div class="categories">
+
+    <button class="category-btn active" data-category="all">
+        Tous les romans
+    </button>
+
+    <button class="category-btn" data-category="romance">
+        Romance ♡
+    </button>
+
+    <button class="category-btn" data-category="thriller">
+        Thriller 🔍
+    </button>
+
+    <button class="category-btn" data-category="drame">
+        Drame 💔
+    </button>
+
+    <button class="category-btn" data-category="fantasy">
+        Fantasy ✨
+    </button>
+
+</div>
+
+        <div class="books-grid" >
+
+
+            <!-- ROMAN 1 -->
+            <div class="book-card" data-category="romance">
+
+                <img src="IMAGES/It Ends with Us_ A Novel (1)_ Hoover, Colleen_ 9781501110368_ Amazon_com_ Books.jpg" alt="Roman 1">
+
+                <h3>It Ends With Us</h3>
+
+                <p class="author">Colleen Hoover</p>
+
+                <strong>95 DH</strong>
+
+                <div class="buttons">
+                    <button class="order">🛒 Commander</button>
+                    <button class="details">Voir détails</button>
+                </div>
+
+            </div>
+
+
+            <!-- ROMAN 2 -->
+            <div class="book-card" data-category="drame">
+
+                <img src="IMAGES/télécharger (17).jpg" alt="Roman 2">
+
+                <h3>The Seven Husbands of Evelyn Hugo</h3>
+
+                <p class="author">Taylor Jenkins Reid</p>
+
+                <strong>90 DH</strong>
+
+                <div class="buttons">
+                    <button class="order">🛒 Commander</button>
+                    <button class="details">Voir détails</button>
+                </div>
+
+            </div>
+
+
+            <!-- ROMAN 3 -->
+            <div class="book-card" data-category="thriller">
+
+                <img src="IMAGES/a good girls guide to murder design poster.jpg" alt="Roman 3">
+
+                <h3>A Good Girl's Guide to Murder</h3>
+
+                <p class="author">Holly Jackson</p>
+
+                <strong>85 DH</strong>
+
+                <div class="buttons">
+                    <button class="order">🛒 Commander</button>
+                    <button class="details">Voir détails</button>
+                </div>
+
+            </div>
+
+
+            <!-- ROMAN 4 -->
+            <div class="book-card" data-category="thriller">
+
+                <img src="IMAGES/Amazon_com_ Verity_ 9781538724736_ Hoover, Colleen_ Books.jpg" alt="Roman 4">
+
+                <h3>Verity</h3>
+
+                <p class="author">Colleen Hoover</p>
+
+                <strong>95 DH</strong>
+
+                <div class="buttons">
+                    <button class="order">🛒 Commander</button>
+                    <button class="details">Voir détails</button>
+                </div>
+
+            </div>
+
+
+            <!-- ROMAN 5 -->
+            <div class="book-card" data-category="drame">
+
+                <img src="IMAGES/John Green, Nos Etoiles contraires.jpg" alt="Roman 5">
+
+                <h3>Nos étoiles contraires</h3>
+
+                <p class="author">John Green</p>
+
+                <strong>80 DH</strong>
+
+                <div class="buttons">
+                    <button class="order">🛒 Commander</button>
+                    <button class="details">Voir détails</button>
+                </div>
+
+            </div>
+
+
+            <!-- ROMAN 6 -->
+            <div class="book-card" data-category="romance">
+
+                <img src="IMAGES/Guillaume Musso La Fille De Papier.jpg" alt="Roman 6">
+
+                <h3>La Fille de Papier</h3>
+
+                <p class="author">Guillaume Musso</p>
+
+                <strong>85 DH</strong>
+
+                <div class="buttons">
+                    <button class="order">🛒 Commander</button>
+                    <button class="details">Voir détails</button>
+                </div>
+
+            </div>
+
+
+            <!-- ROMAN 7 -->
+            <div class="book-card" data-category="fantasy">
+
+                <img src="IMAGES/Six of Crows_ Book 1.jpg" alt="Roman 7">
+
+                <h3>Six of Crows</h3>
+
+                <p class="author">Leigh Bardugo</p>
+
+                <strong>90 DH</strong>
+
+                <div class="buttons">
+                    <button class="order">🛒 Commander</button>
+                    <button class="details">Voir détails</button>
+                </div>
+
+            </div>
+
+
+            <!-- ROMAN 8 -->
+            <div class="book-card" data-category="romance">
+
+                <img src="IMAGES/Elle et Lui.jpg" alt="Roman 8">
+
+                <h3>Elle & Lui</h3>
+
+                <p class="author">Olivier Doré</p>
+
+                <strong>75 DH</strong>
+
+                <div class="buttons">
+                    <button class="order">🛒 Commander</button>
+                    <button class="details">Voir détails</button>
+                </div>
+          
+
+              
+
+        </div>
+    </section>
+
+
+
+<!-- PANIER -->
+<div class="cart-overlay" id="cartOverlay">
+
+    <div class="cart-box">
+
+        <div class="cart-header">
+            <h2>🛒 Mon Panier</h2>
+
+            <button id="closeCart" class="close-cart" type="button">
+                ✕
+            </button>
+        </div>
+
+        <div id="cartItems">
+            <p class="empty-cart">Votre panier est vide ♡</p>
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="total-line">
+                <span>Total :</span>
+                <strong><span id="cartTotal">0</span> DH</strong>
+            </div>
+
+            <button id="clearCart" class="clear-cart" type="button">
+                Vider le panier
+            </button>
+
+            <button id="checkoutBtn" class="checkout-btn" type="button">
+                Passer la commande →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <div class="footer-logo">
+            <h2>AISHAM</h2>
+            <p>Romans & Histoires</p>
+        </div>
+
+        <div>
+            <h3>Liens utiles</h3>
+            <a href="#">Accueil</a>
+            <a href="#romans">Romans</a>
+            <a href="#">Nouveautés</a>
+            <a href="#">À propos</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div>
+            <h3>Nous contacter</h3>
+            <p>📞 +212 6 75 38 55 90</p>
+            <p>✉️ maaroudaicha336@gmail.com</p>
+            <p>📍 Maroc</p>
+        </div>
+
+        <div>
+            <h3>Suivez-nous</h3>
+            <p class="social">Instagram · TikTok · Facebook</p>
+            <p>Rejoignez notre communauté ♡</p>
+        </div>
+
+    </footer>
+
+    <div class="copyright">
+        © 2026 Aisham. Tous droits réservés.
+    </div>
+</Div>
+<!-- PAGE PANIER -->
+<div id="panierPage" style="display: none;">
+
+    <header class="navbar">
+        <div class="logo">
+            <span>♧</span>
+            <div>
+                <h1>AISHAM</h1>
+                <small>Books · Dreams · You</small>
+            </div>
+        </div>
+
+        <button id="retourAccueil" class="details">
+            ← Retour aux romans
+        </button>
+    </header>
+
+    <main class="panier-container">
+
+        <div class="panier-titre">
+            <h2>Mon Panier ♡</h2>
+            <p>Retrouvez vos romans préférés.</p>
+        </div>
+
+        <div id="listePanier">
+            <p class="panier-vide">Votre panier est vide.</p>
+        </div>
+
+        <div class="resume-panier">
+            <h3>Total : <span id="totalPanier">0</span> DH</h3>
+
+            <button id="viderPanier" class="details">
+                Vider le panier
+            </button>
+
+            <button id="commanderPanier" class="order">
+                Passer la commande
+            </button>
+        </div>
+
+    </main>
+
+</div>
+
+
+    <script src="script2.js"></script>
+
+</body>
+</html
